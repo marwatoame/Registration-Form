@@ -1,0 +1,87 @@
+body {
+    font-size: 16px;
+    color: white;
+    font-family: system-ui;
+    background-image: url("./images/jett.png");
+    background-size: cover;
+}
+
+.quote {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    right: 150px;
+    width: 300px;
+}
+
+#img {
+    position: absolute;
+    right: 40px;
+    top: 300px;
+}
+
+#birthday {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 1% auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px
+}
+
+input,
+select {
+    border: 1px solid white;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 8px;
+}
+
+.form-inline label,
+.form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.error {
+    color: rgb(208, 96, 96);
+    font-size: 90%;
+}
+
+
+input[type="submit"] {
+    font-size: 110%;
+    background-color: rgb(208, 96, 96);
+    border-color: rgb(208, 96, 96);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.input-error {
+    border: 1px solid red;
+}

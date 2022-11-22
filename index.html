@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="form-validation.js"></script>
+</head>
+
+<body>
+
+    <div class="quote">
+        <h1>"Make the right choice, even if it calls for sacrifice."<br>-Omen</h1>
+        <img id="img" src="./images/icon.png" alt="Logo" width="200" height="200">
+    </div>
+
+    <form name="Form" onsubmit="return validateForm()">
+        <div class="container">
+            <h2>Become An Agent!<br>Register Now</h2>
+
+            <label>Full Name</label>
+            <input type="text" name="name" id="name">
+            <div class="error" id="nameError"></div>
+
+            <label>Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+            <div class="error" id="birthdayError"></div>
+
+            <label>Email Address</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailError"></div>
+
+            <label>Username</label>
+            <input type="text" name="username" id="username">
+            <div class="error" id="usernameError"></div>
+
+            <label>Password</label>
+            <input type="password" name="password" maxlength="15" id="password">
+            <div class="error" id="passwordError"></div>
+
+            <label>Region</label>
+            <select name="region" id="region">
+                <option>Select</option>
+                <option>EUW</option>
+                <option>EUNE</option>
+                <option>MENA</option>
+                <option>NA</option>
+            </select>
+            <div class="error" id="regionError"></div>
+
+            <label>Gender</label>
+            <div class="form-inline" id="gender">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="female"> Other</label>
+            </div>
+            <div class="error" id="genderError"></div>
+
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
